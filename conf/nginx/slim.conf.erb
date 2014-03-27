@@ -1,7 +1,13 @@
 # Default configuration for non-framework apps
 root /app/<%= ENV['DOCUMENT_ROOT'] %>;
 
+index index.php;
+
 location /wp-admin/ {
+	index index.php;
+}
+
+location /wordpress/wp-admin/ {
 	index index.php;
 }
 
